@@ -1,0 +1,17 @@
+* Tuesday tasks: 
+** 1 [2/3]
+1. [X] Find the five clients who have been waiting the longest without a completed report.
+2. [X] Focus on those with the earliest referral dates and no “Report Sent” status.
+3. [ ] For each of these, write a short explanation (2-3 sentences) on why it’s important to follow up.
+** 2 [2/2]
+1. [X] Review the ‘Test Type’ column and group each entry into a general category 
+such as “Learning Disability,” “ADHD-related,” or “Cognitive Assessment.”
+1. [X] If any entries are unclear or too vague, highlight them as needing clarification.
+** 3 [2/3]
+1. [X] Compare how many cases came from each referral source(such as Vocational Rehabilitation, Private Pay, etc.)
+and how they are distributed across different report statuses.
+2. [X] Summarize your findings in a brief visual
+3. [ ] and explain the visual.
+** 4 [2/2]
+1. [X] Look for any missing or blank entries in the ‘Test Type’ column
+2. [X] and compile a list of those clients for follow-up.

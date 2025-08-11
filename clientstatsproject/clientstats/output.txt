@@ -1,0 +1,125 @@
+---------------------------------
+Data Information
+---------------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 98 entries, 0 to 97
+Data columns (total 7 columns):
+ #   Column      Non-Null Count  Dtype 
+---  ------      --------------  ----- 
+ 0   CLIENT      98 non-null     object
+ 1   IPE         98 non-null     object
+ 2   DISABILITY  95 non-null     object
+ 3   LOCATION    93 non-null     object
+ 4   STATUS      93 non-null     object
+ 5   DOB         65 non-null     object
+ 6   Unnamed: 6  1 non-null      object
+dtypes: object(7)
+memory usage: 5.5+ KB
+Index(['CLIENT', 'IPE', 'DISABILITY', 'LOCATION', 'STATUS', 'DOB',
+       'Unnamed: 6'],
+      dtype='object')
+---------------------------------
+Disability
+---------------------------------
+0                UNIDENTIFIED
+1                UNIDENTIFIED
+2                UNIDENTIFIED
+3     INTELLECTUAL DISABILITY
+4                      CANCER
+               ...           
+93                     AUTISM
+94                      OTHER
+95                      OTHER
+96                      OTHER
+97                      OTHER
+Name: DISABILITY_CATEGORY, Length: 98, dtype: object
+DISABILITY_CATEGORY
+OTHER                      39
+AUTISM                     21
+INTELLECTUAL DISABILITY    16
+UNIDENTIFIED               13
+LEARNING DISABILITY         6
+CANCER                      1
+VISUAL IMPAIRMENT           1
+MENTAL HEALTH               1
+Name: count, dtype: int64
+---------------------------------
+Status
+---------------------------------
+0                   CAMP
+1                   CAMP
+2                   CAMP
+3                 CLOSED
+4                 CLOSED
+             ...        
+88    PENDING EMPLOYMENT
+89    PENDING EMPLOYMENT
+90    PENDING EMPLOYMENT
+91                 OTHER
+93                 OTHER
+Name: STATUS_CATEGORY, Length: 93, dtype: object
+STATUS_CATEGORY
+CLOSED                22
+OTHER                 19
+PENDING OJT           16
+PENDING EMPLOYMENT    13
+EMPLOYED              12
+CLOSURE REQUEST        4
+INTAKE NEEDED          4
+CAMP                   3
+Name: count, dtype: int64
+---------------------------------
+Location
+---------------------------------
+LOCATION
+ORLANDO               35
+LAKELAND              10
+CLERMONT               8
+APOPKA                 7
+Unknown Location       5
+WINTER PARK            3
+SANFORD                3
+KISSIMMEE              3
+MAITLAND               2
+WEST PALM BEACH        2
+OCOEE                  2
+WINTER GARDEN          2
+MINNEOLA               2
+ALTAMONTE SPRINGS      2
+OVIEDO                 2
+HOWEY IN THE HILLS     1
+HIALEAH                1
+DELRAY BEACH           1
+OAKLAND                1
+SAINT CLOUD            1
+WINDERMERE             1
+GROVELAND              1
+LAKE WESTON ROAD       1
+ADRIEL LANE            1
+DAVENPORT              1
+Name: count, dtype: int64
+---------------------------------
+IPE
+---------------------------------
+IPE_CATEGORY
+STOCKING & WAREHOUSE                           16
+ADMINISTRATIVE                                 12
+FOOD SERVICE                                   11
+RETAIL                                          9
+TECHNOLOGY                                      5
+MAINTENANCE                                     5
+EDUCATION                                       3
+TRANSPORTATION                                  3
+HEALTHCARE                                      3
+SKILLED TRADES                                  2
+SECURITY                                        2
+ANIMAL CARETAKERS                               2
+GRAPHIC DESIGNERS                               2
+AMUSEMENT AND RECREATION ATTENDANTS             1
+NONFARM ANIMAL CARETAKERS                       1
+DATA ENTRY KEYERS                               1
+USHERS, LOBBY ATTENDANTS, AND TICKET TAKERS     1
+BUSINESS OPERATIONS SPECIALISTS                 1
+RECREATIONAL THERAPISTS                         1
+Name: count, dtype: int64
+The most common IPE is STOCKING & WAREHOUSE

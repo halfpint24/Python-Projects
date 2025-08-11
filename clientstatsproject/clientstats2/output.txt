@@ -1,0 +1,63 @@
+---------------------------------
+IPE Goals
+---------------------------------
+
+IPE_CATEGORY
+STOCKING & WAREHOUSE                           16
+ADMINISTRATIVE                                 12
+FOOD SERVICE                                   11
+RETAIL                                          9
+TECHNOLOGY                                      5
+MAINTENANCE                                     5
+EDUCATION                                       3
+TRANSPORTATION                                  3
+HEALTHCARE                                      3
+SKILLED TRADES                                  2
+SECURITY                                        2
+ANIMAL CARETAKERS                               2
+GRAPHIC DESIGNERS                               2
+AMUSEMENT AND RECREATION ATTENDANTS             1
+NONFARM ANIMAL CARETAKERS                       1
+DATA ENTRY KEYERS                               1
+USHERS, LOBBY ATTENDANTS, AND TICKET TAKERS     1
+BUSINESS OPERATIONS SPECIALISTS                 1
+RECREATIONAL THERAPISTS                         1
+Name: count, dtype: int64
+The most common career paths are: 
+IPE_CATEGORY
+STOCKING & WAREHOUSE    16
+ADMINISTRATIVE          12
+FOOD SERVICE            11
+RETAIL                   9
+TECHNOLOGY               5
+Name: count, dtype: int64
+
+---------------------------------
+DOB
+---------------------------------
+
+DOB_CATEGORY
+20-24    19
+30-35     9
+25-29     9
+46-60     8
+36-45     8
+< 20      3
+> 60      1
+Name: count, dtype: int64
+
+---------------------------------
+AGE RANGE IPE GOAL
+---------------------------------
+
+IPE_CATEGORY  ADMINISTRATIVE  ...  TRANSPORTATION
+DOB_CATEGORY                  ...                
+20-24                      4  ...               1
+25-29                      2  ...               0
+30-35                      3  ...               0
+36-45                      1  ...               1
+46-60                      0  ...               0
+< 20                       0  ...               0
+> 60                       0  ...               0
+
+[7 rows x 15 columns]
