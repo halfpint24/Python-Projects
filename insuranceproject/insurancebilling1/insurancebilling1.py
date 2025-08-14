@@ -69,6 +69,8 @@ cleaned_data['CPT'] = cleaned_data['CPT'].apply(parse_cpt_codes)
 cleaned_data['Type Of Services'].fillna('Unknown Service', inplace=True)
 cleaned_data.fillna('N/A')
 
+cleaned_data.to_excel('cleaned_data.xlsx', index=False)
+
 # DASHBOARD
 
 st.header('Verified vs unverified insurance')
