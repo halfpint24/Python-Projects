@@ -6,6 +6,9 @@ row_issues = {i: [] for i in raw_data.index}
 
 for col in raw_data.columns:
     if 'date' in col.lower():
+        if col.lower() == 'client name (end date only)':
+            continue
+        
         raw_data[col] = pd.to_datetime(raw_data[col], errors='coerce')
 
         mask_missing = raw_data[col].isna()
