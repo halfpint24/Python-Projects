@@ -1,0 +1,12 @@
+* Hi Collin,
+- Thank you for your time today. I will update the team on what we discussed.
+* Before we delve into automation, please complete this final data analysis task:
+** Build a comprehensive 6-8 page report combining the week’s work: [3/6]
+1. [X] Summary of cleaning issues & resolutions
+2. [X] Engagement analysis (PPT hours, resumes, notes vs. submissions)
+3. [X] Text analysis insights (themes in Notes)
+4. [ ] Staff performance and workload (CSI distribution, Pareto)
+5. [ ] City-level trends (resume completion rates, engagement differences)
+6. [ ] Recommendations for improving program effectiveness
+** Deliverables: [0/1]
+1. [ ] Polished PDF report with charts, tables, and narrative.
