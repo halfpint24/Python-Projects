@@ -1,0 +1,21 @@
+{
+  "run_at_nairobi": "2025-08-26T10:15:07.708258+03:00",
+  "today_nairobi_date": "2025-08-26",
+  "input": "/home/collinpadgett/Desktop/Python Projects/week5/w5d1/Evals_Anonymized.xlsx",
+  "out": "/home/collinpadgett/Desktop/Python Projects/week5/w5d1/out/mon/cleaned.xlsx",
+  "issues": "/home/collinpadgett/Desktop/Python Projects/week5/w5d1/out/mon/issues.xlsx",
+  "targets": [
+    "Referral Date",
+    "Eval Date",
+    "Feedback Session Date"
+  ],
+  "min_year": 2005,
+  "strict": "True",
+  "dry_run": "False",
+  "rename_map": {
+    "Referral Date": "Referral Date",
+    "Eval Date": "Eval Date",
+    "Feedback Session Date": "Feedback Session Date"
+  },
+  "missing_targets": []
+}
