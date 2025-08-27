@@ -1,0 +1,31 @@
+Report Status:
+  Open:
+    - Open
+    - In Progress
+    - Pending
+  Closed:
+    - Closed
+
+Contractor Paid Status:
+  Paid:
+    - Paid
+  Unpaid:
+    - Unpaid
+    - Pending
+
+Location:
+  Orlando:
+    - Orlando
+    - Orlando Office
+    - Aldi Orlando
+    - Winn Dixie Orlando
+  Lakeland:
+    - Lakeland
+    - Target Lakeland
+  Kissimmee:
+    - Kissimmee, FL
+  West Palm Beach:
+    - West Palm Beach
+    - West Palm Beach/Gardens
+  Virtual:
+    - Virtual

@@ -1,0 +1,36 @@
+{
+  "input": "out/mon/cleaned.xlsx",
+  "output": "out/tue/standardized.xlsx",
+  "audit": "out/tue/audit.csv",
+  "unmapped": "out/tue/unmapped_values.csv",
+  "mapping": "configs/labels.yaml",
+  "normalize": "title",
+  "columns": [
+    "Report Status",
+    "Contractor Paid Status",
+    "Location"
+  ],
+  "canonical_sets": {
+    "Report Status": [
+      "Closed",
+      "Open"
+    ],
+    "Contractor Paid Status": [
+      "Paid",
+      "Unpaid"
+    ],
+    "Location": [
+      "Kissimmee",
+      "Lakeland",
+      "Orlando",
+      "Virtual",
+      "West Palm Beach"
+    ]
+  },
+  "unmapped_remaining": {
+    "Report Status": true,
+    "Contractor Paid Status": true,
+    "Location": true
+  },
+  "audit_changes": 370
+}
