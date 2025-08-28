@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "total_rows": 267,
+    "missing_required_rows": 326,
+    "duplicate_groups_exact": 1,
+    "duplicate_groups_normalized": 1
+  },
+  "duplicate_groups": [
+    {
+      "group_id": 1,
+      "key_type": "exact",
+      "size": 267,
+      "key_value": "(None,)"
+    },
+    {
+      "group_id": 1,
+      "key_type": "normalized",
+      "size": 267,
+      "key_value": "(None,)"
+    }
+  ]
+}
