@@ -1,7 +1,8 @@
 # app.py
 from fastapi import FastAPI, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field, conlist
+from pydantic import BaseModel, Field, conlist, field_validator
 import joblib
 import numpy as np
 import logging
@@ -15,13 +16,40 @@ class IrisFeatures(BaseModel):
         ..., description='Iris measurements: [sepal_len, sepal_wid, petal_len, petal_wid]'
     )
 
+    @field_validator('features')
+    @classmethod
+    def validate_features(cls, v):
+        # Ensure finite numbers and reasonable biological range (>=0, <= 10 cm)
+        if len(v) != 4:
+            raise ValueError('features must have length 4')
+        for val in v:
+            if val is None:
+                raise ValueError('features cannot contain nulls')
+            if not (float('-inf') < float(val) < float('inf')):
+                raise ValueError('features must be finite numbers')
+            if float(val) < 0 or float(val) > 10:
+                # boundary-case friendly: allow 0..10cm
+                raise ValueError('each feature must be between 0 and 10 centimeters')
+        return v
 
-app = FastAPI(title='Iris Model Service', version='1.1.0')
+
+
+app = FastAPI(title='Iris Model Service', version='1.2.0')
+
+# Allow simple cross-origin usage from local tools and browsers
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'],
+    allow_credentials=False,
+    allow_methods=['*'],
+    allow_headers=['*'],
+)
+
 
 
 @app.on_event('startup')
 def load_model():
-    """Load model once when the app starts."""
+    '''Load model once when the app starts.'''
     try:
         bundle = joblib.load('model.pkl')
         app.state.pipe = bundle['pipeline']
@@ -46,7 +74,7 @@ async def unhandled_exceptions(request: Request, exc: Exception):
 
 @app.post('/predict')
 def predict(payload: IrisFeatures):
-    """Parse JSON -> run through the *same* preprocessing+model pipeline -> return prediction."""
+    '''Parse JSON -> run through the *same* preprocessing+model pipeline -> return prediction.'''
     if app.state.pipe is None:
         raise HTTPException(status_code=500, detail='Model not loaded. Ensure model.pkl is present.')
 
